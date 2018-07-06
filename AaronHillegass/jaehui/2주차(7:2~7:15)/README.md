@@ -129,5 +129,36 @@ func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange
         }
 ```
 ###offline study 내용
-* 
+* 재희
+  1. textfield 키보드 숨기기 구현 시 유의사항
+     IBAction 작성 -> 배경 뷰에 Tap Gesture Recognizer 추가 -> 드래그로 IBAction 함수와 연결
+  2. 화씨 -> 섭씨 온도 변화할 때 
+     `Double` -> `Measurement<UnitTemperature>`
+     `(value - 32) * (5/9)` -> `fahrenheitValue.converted(to: .celsius)`
+  3. 프로퍼티 옵저버 실행 과정
+  4. NumberFormatter
+  ```swift
+  celsiusLabel.text = numberFormatter.string(from: NSNumber(value: celsiusValue.value))
+  ```
+  5. 소수점 2개 이상 허용x, 알파벳 허용 x
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
